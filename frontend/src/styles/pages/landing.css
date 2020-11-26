@@ -1,0 +1,66 @@
+:root {
+    --sword: rgb(151, 113, 16);
+}
+
+#container {
+    background-image: url('../../images/background.jpg');
+    background-repeat: no-repeat;
+    background-size:100%;
+    bottom: 0;
+    color: black;
+    left: 0;
+    overflow: auto;
+    padding: 3rem;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    background-size: cover;
+}
+
+#container .content {
+    display: flex;
+    flex-direction: column;
+}
+
+#container .contentCards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-bottom: 6rem;
+
+    width: 23vw;
+    height: 24vw;
+
+    background-color: rgba(255, 255, 255, 0.75);
+
+    border-radius: 0.4rem;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+.card .buttonCard {
+    background-color: rgb(151, 113, 16);
+    padding: 0.8rem;
+    color: white;
+    border-style: none;
+    border-radius: 0.4rem;
+    margin: 1rem;
+    width: 80%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+
+.cardTitle {
+    font-family: 700 18px 'Roboto Slab', serif;
+    color: var(--sword);
+}

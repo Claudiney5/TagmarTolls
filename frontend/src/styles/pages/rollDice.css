@@ -1,0 +1,128 @@
+:root {
+  --sword: rgb(151, 113, 16);
+}
+
+#container-dice{
+  background-image: url('../../images/TagmarBack2.png');
+  background-repeat: no-repeat;
+  background-size:100%;
+  bottom: 0;
+  color: black;
+  left: 0;
+  overflow: auto;
+  padding: 2rem;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  background-size: cover;
+}
+
+.dd {
+  grid-area: dd;
+}
+
+.tx {
+  grid-area: tx;
+}
+
+.res {
+  grid-area: res;
+}
+
+.content-dice {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+    "dd . . tx"
+    "dd . . tx"
+    "dd res res res";
+  margin-bottom: 2rem;
+}
+
+.card-dice {
+  padding: 2rem;;
+  
+  background-color: rgba(0, 0, 0, 0.3);
+  color: whitesmoke;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  border-radius: 0.4rem;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+.dice img {
+  width: 8rem;
+  height: 100%;
+  margin: 0.2rem;
+  cursor: pointer;
+}
+
+.dice hr {
+  width: 100%;
+  margin: 0.6rem;
+}
+
+.text {
+
+  padding: 1.2rem;
+  padding-top: 1rem;
+
+  
+  background-color: rgba(0, 0, 0, 0.3);
+  color: whitesmoke;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  border-radius: 0.4rem;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+.text .diceTitle img {
+  max-width: 14rem;
+
+}
+
+.result {
+
+  padding: 1rem;
+  
+  background-color: rgba(0, 0, 0, 0.3);
+  color: whitesmoke;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  border-radius: 0.4rem;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+.dice_rolls {
+  padding: 0.8rem;
+  display: flex;  
+  align-items: space-between;
+  justify-content: center;
+}
+
+.die {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;  
+  align-items: space-between;
+  justify-content: center;
+}
+
+.die img {
+  height: 6rem;
+}
