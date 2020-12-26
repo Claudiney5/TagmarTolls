@@ -28,14 +28,16 @@ function Landing() {
                         <div className="card">
                             <h1 className="cardTitle">Personagens</h1>
                             <p>Criação de personagens para Mestres de Jogo e Jogadores</p>
-                            <button className='buttonCard'>Personagens</button>
+                            <Link to='/attributes'  className='buttonCard'>
+                                Personagens
+                            </Link>
 
                         </div>
 
                         <div className="card">
                             <h1 className="cardTitle">Combates</h1>
                             <p>Automatização dos combates com cálculos automáticos de danos e demias fatores.</p>
-                            <Link to='/fight'>
+                            <Link to='/myForm'>
                                 <button className='buttonCard'>Combate</button>
                             </Link>
                         </div>

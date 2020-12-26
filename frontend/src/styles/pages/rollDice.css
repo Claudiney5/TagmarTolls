@@ -109,20 +109,107 @@
 }
 
 .dice_rolls {
+ 
+  width: 60vw;
+  height: 21vh;
   padding: 0.8rem;
-  display: flex;  
+  display: flex; 
+  flex-wrap: nowrap;
+  
   align-items: space-between;
   justify-content: center;
+
 }
 
 .die {
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 17vh;
+  margin-left: 3.5rem;
+
   padding-left: 1rem;
   padding-right: 1rem;
-  display: flex;  
+
   align-items: space-between;
   justify-content: center;
+
+  list-style-type: none;
+  display: inline-block;
+
 }
 
-.die img {
-  height: 6rem;
+
+.hidden {
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 17vh;
+  margin-left: 3.5rem;
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  align-items: space-between;
+  justify-content: center;
+
+  list-style-type: none;
+  
+  display: none;
+}
+
+.die p {
+  padding-top: 5.1vh;
+  padding-bottom: 6.6vh;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.die10 {
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 19vh;
+  margin-left: 3.5rem;
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  align-items: space-between;
+  justify-content: center;
+
+  list-style-type: none;
+  display: inline-block;
+
+}
+
+.die1 {
+  background-image: url('../../images/d10.png');
+  
+}
+
+.die10 p {
+  padding-top: 3.6vh;
+  padding-bottom: 8.5vh;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+
+.die2 {
+  background-image: url('../../images/d20_1.png');
+
+}
+
+.die3 {
+  background-image: url('../../images/d20_2.png');
+  
+}
+
+.die4 {
+  background-image: url('../../images/d20_3.png');
+  
 }
